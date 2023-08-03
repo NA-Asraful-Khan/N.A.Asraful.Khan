@@ -36,7 +36,7 @@ function About() {
                     </div>
                     <div className="btn-con">
                         <Button 
-                            name="Download CV"
+                            name="Download Resume"
                             blob="blob"
                             icon={download}
                             bg={theme.colorPrimary}

@@ -21,10 +21,11 @@ function Button({name, blob,color, icon, bg, bFw, bRad, bPad}) {
     )
 }
 
-const ButtonStyled = styled.button`
+const ButtonStyled = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
+    width:60%;
     outline: none;
     border: none;
     cursor: pointer;
