@@ -5,7 +5,7 @@ import { useTheme } from '../../context/themeContext';
 function Button({name, blob,color, icon, bg, bFw, bRad, bPad}) {
     const theme= useTheme()
     return (
-        <ButtonStyled 
+        <ButtonStyled href="https://github.com/NA-Asraful-Khan/N.A.Asraful.Khan/raw/main/src/img/resume/Nur-A-Asraful-Khan.pdf" 
         style={{
             backgroundColor: bg,
             color: color,
