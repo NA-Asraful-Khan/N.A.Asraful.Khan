@@ -54,7 +54,7 @@ function Timeline() {
 
 const TimelineStyled = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
     gap: 2rem;
     .timeline{
         background-color: ${(props) => props.theme.colorBg5};

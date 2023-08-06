@@ -106,7 +106,7 @@ const PortfoliosStyled = styled(SectionLayout)`
     background: linear-gradient(180deg, #222121,#191919);
     .portfolios-con{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 2rem;
     }
 

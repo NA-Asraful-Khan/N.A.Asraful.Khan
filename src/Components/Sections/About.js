@@ -14,7 +14,8 @@ import shape2 from '../../img/shape2.png'
 function About() {
     const theme = useTheme()
     return (
-        <AboutStyled id='about' theme={theme}>
+        <div>
+            <AboutStyled id='about' theme={theme}>
             <div className="about-info">
                 <div className="about-image">
                     <img src={about} alt="" />
@@ -61,6 +62,7 @@ function About() {
             <img alt='shape' src={shape1} className="shape1" />
             <img alt='shape' src={shape2} className="shape2" />
         </AboutStyled>
+        </div>
     )
 }
 
