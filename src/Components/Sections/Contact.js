@@ -33,7 +33,7 @@ function Contact() {
     }
     return (
         <ContactStyled id='contact' theme={theme}>
-            <Title name={'Lets Talk'} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+            <Title name={'Lets Talk'} desc={'Connecting with Me is Just a Click Away!'} />
             
             <div className="contact-info">
                 <div className="map-section">
