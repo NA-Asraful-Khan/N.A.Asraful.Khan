@@ -68,7 +68,7 @@ const NavigationStyled = styled.nav`
         align-items: center;
         justify-content: space-between;
         li{
-            margin: 0 1rem;
+            margin: 0 1px;
             a{
                 padding: .6rem .3rem;
                 position: relative;
