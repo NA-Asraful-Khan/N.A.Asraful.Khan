@@ -1,15 +1,36 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import { useTheme } from '../../context/themeContext'
 import { SectionLayout } from '../../styles/Layouts'
-import Subscribe from '../Subscribe/Subscribe'
 import Title from '../Title/Title'
 import map from '../../img/map.png'
-import Button from '../Button/Button'
+
+import emailjs from '@emailjs/browser';
+import ButtonContact from '../Button/ButtonContact'
+
+const Result =()=>{
+    return(
+        <p className='text-green-900 font-bold text-xl'>Your Result Has Been Succesfully Sent!</p>
+    )
+}
 
 
 function Contact() {
+    const [result, setResult]= useState(false)
     const theme = useTheme()
+    const form = useRef();
+    const formHandle = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_rvlhqpd', 'template_m01saun', form.current, 'U6ToHWt-PmB8uTJB4')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            e.target.reset();
+            setResult(true);
+    }
     return (
         <ContactStyled id='contact' theme={theme}>
             <Title name={'Lets Talk'} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
@@ -18,7 +39,7 @@ function Contact() {
                 <div className="map-section">
                     <img src={map} alt="" />
                 </div>
-                <form action="" className="form-section">
+                <form ref={form} onSubmit={formHandle} action="" className="form-section">
                     <div className="input-control">
                         <input type="text" placeholder='Your name' />
                         <input type="email" placeholder='Email address' />
@@ -30,7 +51,7 @@ function Contact() {
                         <textarea name="" id="" cols="30" rows="6" placeholder='Message'></textarea>
                     </div>
                     <div className="btn-con">
-                        <Button
+                        <ButtonContact
                             name="Send Message"
                             blob="blob"
                             bg={theme.colorPrimary}
@@ -41,6 +62,7 @@ function Contact() {
                             bPad={theme.bPad1}
                         />
                     </div>
+                    <div>{result?<Result/>: null}</div>
                 </form>
             </div>
         </ContactStyled>
