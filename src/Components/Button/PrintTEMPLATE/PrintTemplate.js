@@ -13,12 +13,11 @@ const resumeData = [
     title: "Professional Experience",
     jobs: [
       {
-        title: "Junior MERN Stack Developer - Tech Solutions Inc.",
-        duration: "June 2023 - Present (6 months)",
+        title: "Junior Node Js Developer - STITBD.",
+        duration: "May 2024 - Present (8 months)",
         responsibilities: [
-          "Developed and maintained full-stack web applications using MongoDB, Express.js, React.js, and Node.js",
-          "Collaborated with senior developers to implement new features and optimize existing functionality",
-          "Reduced API response time by 40% through implementation of efficient database queries",
+          "Developed and maintained full-stack web applications using Next.js, React.js, and Node.js",
+          "Build OTT Platform and POS service Web Applications",
           "Participated in daily stand-ups and sprint planning meetings in an Agile environment",
         ],
       },
@@ -189,12 +188,14 @@ const PrintTemplate = () => {
   return (
     <div className="print-template">
       <header>
-        <h1 className="printh1">John Doe</h1>
+        <h1 className="printh1">Nur A Asraful Khan</h1>
         <p className="title">MERN Stack Developer</p>
         <div className="contact-info">
-          <p>📧 john.doe@email.com | 📱 (555) 123-4567</p>
-          <p>🔗 linkedin.com/in/johndoe | 💻 github.com/johndoe</p>
-          <p>📍 New York, NY</p>
+          <p>📧 n.a.asraful.khan@gmail.com | 📱 +880 188 183 3329</p>
+          <p>
+            🔗 linkedin.com/in/na-asraful-khan/ | 💻 github.com/NA-Asraful-Khan
+          </p>
+          <p>📍 Dhaka, Bangladesh</p>
         </div>
       </header>
       {resumeData.map((section, index) => (
