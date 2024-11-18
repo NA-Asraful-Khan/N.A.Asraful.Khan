@@ -167,8 +167,8 @@ const PrintTemplate = () => {
         <div className="skill-grid">
           {section.skills.map((skill, index) => (
             <div key={index} class="skill-category">
-              <h3>${skill.category}</h3>
-              <p>${skill.items.join(", ")}</p>
+              <h3>{skill.category}</h3>
+              <p>{skill.items.join(", ")}</p>
             </div>
           ))}
         </div>
@@ -179,9 +179,9 @@ const PrintTemplate = () => {
         <div key={index} class="degree">
           <h3 className="printh3">${degree.degree}</h3>
           <p>
-            ${degree.university} | Graduated: ${degree.graduationYear}
+            {degree.university} | Graduated: ${degree.graduationYear}
           </p>
-          <p>${degree.gpa}</p>
+          <p>{degree.gpa}</p>
         </div>
       ));
     }
