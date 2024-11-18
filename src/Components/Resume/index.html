@@ -199,139 +199,221 @@
         </div>
       </header>
 
-      <section class="objective">
-        <h2>Professional Summary</h2>
-        <p>
-          Results-driven MERN Stack Developer with 6 months of hands-on
-          experience building scalable web applications. Passionate about
-          creating efficient, user-friendly solutions using modern technologies
-          and best practices.
-        </p>
-      </section>
-
-      <section class="experience">
-        <h2>Professional Experience</h2>
-        <div class="job">
-          <h3>Junior MERN Stack Developer - Tech Solutions Inc.</h3>
-          <p class="duration">June 2023 - Present (6 months)</p>
-          <ul>
-            <li>
-              Developed and maintained full-stack web applications using
-              MongoDB, Express.js, React.js, and Node.js
-            </li>
-            <li>
-              Collaborated with senior developers to implement new features and
-              optimize existing functionality
-            </li>
-            <li>
-              Reduced API response time by 40% through implementation of
-              efficient database queries
-            </li>
-            <li>
-              Participated in daily stand-ups and sprint planning meetings in an
-              Agile environment
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-          <div class="project-header">
-            <h3>Task Management System</h3>
-            <div class="project-links">
-              <a
-                href="https://project2.demo"
-                target="_blank"
-                class="project-link"
-                data-label="Live Demo"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/johndoe/taskmanager"
-                target="_blank"
-                class="project-link"
-                data-label="Source Code"
-                >Source Code</a
-              >
-            </div>
-          </div>
-          <ul>
-            <li>
-              Developed a real-time task management system using MERN stack and
-              Socket.io
-            </li>
-            <li>
-              Implemented drag-and-drop functionality and real-time updates
-            </li>
-            <li>Integrated JWT authentication and role-based access control</li>
-          </ul>
-        </div>
-
-        <div class="project">
-          <div class="project-header">
-            <h3>Task Management System</h3>
-            <div class="project-links">
-              <a
-                href="https://project2.demo"
-                target="_blank"
-                class="project-link"
-                data-label="Live Demo"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/johndoe/taskmanager"
-                target="_blank"
-                class="project-link"
-                data-label="Source Code"
-                >Source Code</a
-              >
-            </div>
-          </div>
-          <ul>
-            <li>
-              Developed a real-time task management system using MERN stack and
-              Socket.io
-            </li>
-            <li>
-              Implemented drag-and-drop functionality and real-time updates
-            </li>
-            <li>Integrated JWT authentication and role-based access control</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="skills">
-        <h2>Technical Skills</h2>
-        <div class="skill-grid">
-          <div class="skill-category">
-            <h3>Frontend</h3>
-            <p>
-              React.js, Redux, HTML5, CSS3, JavaScript (ES6+), Material-UI,
-              Tailwind CSS
-            </p>
-          </div>
-          <div class="skill-category">
-            <h3>Backend</h3>
-            <p>Node.js, Express.js, MongoDB, RESTful APIs, GraphQL</p>
-          </div>
-          <div class="skill-category">
-            <h3>Tools & Others</h3>
-            <p>Git, GitHub, VS Code, Postman, npm, Webpack, Jest</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="education">
-        <h2>Education</h2>
-        <div class="degree">
-          <h3>Bachelor of Science in Computer Science</h3>
-          <p>University of Technology | Graduated: 2023</p>
-          <p>GPA: 3.8/4.0</p>
-        </div>
-      </section>
+      <!-- JavaScript will inject sections here -->
+      <div id="sections"></div>
     </div>
+
+    <script>
+      // Data for each section
+      const resumeData = [
+        {
+          type: "objective",
+          title: "Professional Summary",
+          content:
+            "Results-driven MERN Stack Developer with 6 months of hands-on experience building scalable web applications. Passionate about creating efficient, user-friendly solutions using modern technologies and best practices.",
+        },
+        {
+          type: "experience",
+          title: "Professional Experience",
+          jobs: [
+            {
+              title: "Junior MERN Stack Developer - Tech Solutions Inc.",
+              duration: "June 2023 - Present (6 months)",
+              responsibilities: [
+                "Developed and maintained full-stack web applications using MongoDB, Express.js, React.js, and Node.js",
+                "Collaborated with senior developers to implement new features and optimize existing functionality",
+                "Reduced API response time by 40% through implementation of efficient database queries",
+                "Participated in daily stand-ups and sprint planning meetings in an Agile environment",
+              ],
+            },
+          ],
+        },
+        {
+          type: "projects",
+          title: "Projects",
+          projects: [
+            {
+              name: "Task Management System",
+              links: [
+                {
+                  label: "Live Demo",
+                  url: "https://project2.demo",
+                },
+                {
+                  label: "Source Code",
+                  url: "https://github.com/johndoe/taskmanager",
+                },
+              ],
+              description: [
+                "Developed a real-time task management system using MERN stack and Socket.io",
+                "Implemented drag-and-drop functionality and real-time updates",
+                "Integrated JWT authentication and role-based access control",
+              ],
+            },
+          ],
+        },
+        {
+          type: "skills",
+          title: "Technical Skills",
+          skills: [
+            {
+              category: "Frontend",
+              items: [
+                "React.js",
+                "Redux",
+                "HTML5",
+                "CSS3",
+                "JavaScript (ES6+)",
+                "Material-UI",
+                "Tailwind CSS",
+              ],
+            },
+            {
+              category: "Backend",
+              items: [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "RESTful APIs",
+                "GraphQL",
+              ],
+            },
+            {
+              category: "Tools & Others",
+              items: [
+                "Git",
+                "GitHub",
+                "VS Code",
+                "Postman",
+                "npm",
+                "Webpack",
+                "Jest",
+              ],
+            },
+          ],
+        },
+        {
+          type: "education",
+          title: "Education",
+          degrees: [
+            {
+              degree: "Bachelor of Science in Computer Science",
+              university: "University of Technology",
+              graduationYear: "2023",
+              gpa: "GPA: 3.8/4.0",
+            },
+          ],
+        },
+      ];
+
+      // Function to generate HTML based on section type
+      function generateSection(section) {
+        let html = "";
+
+        if (section.type === "objective") {
+          html = `
+            <section class="objective">
+              <h2>${section.title}</h2>
+              <p>${section.content}</p>
+            </section>
+          `;
+        } else if (section.type === "experience") {
+          html = `
+            <section class="experience">
+              <h2>${section.title}</h2>
+              ${section.jobs
+                .map(
+                  (job) => `
+                <div class="job">
+                  <h3>${job.title}</h3>
+                  <p class="duration">${job.duration}</p>
+                  <ul>
+                    ${job.responsibilities
+                      .map((res) => `<li>${res}</li>`)
+                      .join("")}
+                  </ul>
+                </div>
+              `
+                )
+                .join("")}
+            </section>
+          `;
+        } else if (section.type === "projects") {
+          html = `
+            <section class="projects">
+              <h2>${section.title}</h2>
+              ${section.projects
+                .map(
+                  (project) => `
+                <div class="project">
+                  <div class="project-header">
+                    <h3>${project.name}</h3>
+                    <div class="project-links">
+                      ${project.links
+                        .map(
+                          (link) => `
+                        <a href="${link.url}" target="_blank" class="project-link">${link.label}</a>
+                      `
+                        )
+                        .join("")}
+                    </div>
+                  </div>
+                  <ul>
+                    ${project.description
+                      .map((desc) => `<li>${desc}</li>`)
+                      .join("")}
+                  </ul>
+                </div>
+              `
+                )
+                .join("")}
+            </section>
+          `;
+        } else if (section.type === "skills") {
+          html = `
+            <section class="skills">
+              <h2>${section.title}</h2>
+              <div class="skill-grid">
+                ${section.skills
+                  .map(
+                    (skill) => `
+                  <div class="skill-category">
+                    <h3>${skill.category}</h3>
+                    <p>${skill.items.join(", ")}</p>
+                  </div>
+                `
+                  )
+                  .join("")}
+              </div>
+            </section>
+          `;
+        } else if (section.type === "education") {
+          html = `
+            <section class="education">
+              <h2>${section.title}</h2>
+              ${section.degrees
+                .map(
+                  (degree) => `
+                <div class="degree">
+                  <h3>${degree.degree}</h3>
+                  <p>${degree.university} | Graduated: ${degree.graduationYear}</p>
+                  <p>${degree.gpa}</p>
+                </div>
+              `
+                )
+                .join("")}
+            </section>
+          `;
+        }
+
+        return html;
+      }
+
+      // Loop through the resumeData array and generate HTML for each section
+      const sectionsContainer = document.getElementById("sections");
+      resumeData.forEach((section) => {
+        sectionsContainer.innerHTML += generateSection(section);
+      });
+    </script>
   </body>
 </html>
