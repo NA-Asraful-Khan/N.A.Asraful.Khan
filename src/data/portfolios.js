@@ -1,7 +1,8 @@
 import uuid from "react-uuid";
 import { eye, git } from "../utils/Icons";
 import ShoppingHub from "../img/portImages/ShoppingHub.png";
-import TODO from "../img/portImages/TODO.png";
+import TODO from "../img/portImages/TodoApp.png";
+import SimpEcommerce from "../img/portImages/SimpleEcommerce.png";
 import AngelMakeup from "../img/portImages/AngelMakeup.png";
 import UniManagement from "../img/portImages/unimanagement.png";
 import Photographer from "../img/portImages/Photographer.png";
@@ -32,7 +33,30 @@ export const portfolios = [
     icon1: git,
     icon2: eye,
   },
+  {
+    id: uuid(),
+    category: "MERN",
+    title: "Simple Ecommerce",
+    image: SimpEcommerce,
+    link1: "https://github.com/NA-Asraful-Khan/Fashion_Ecom_Frontend",
+    link2: "https://ecomclient.n-a-asraful-khan.xyz/",
+    link3: "https://github.com/NA-Asraful-Khan/Fashion_Ecom_Backend",
+    icon1: git,
+    icon2: eye,
+  },
+
   //front end start
+  {
+    id: uuid(),
+    category: "Front-End",
+    title: "QUIZ APP",
+    image: QUIZ,
+    link1: "https://github.com/NA-Asraful-Khan/QUIZ_APP",
+    link2: "https://quiz-app-teii.vercel.app/",
+    icon1: git,
+    icon2: eye,
+  },
+
   {
     id: uuid(),
     category: "Front-End",
@@ -71,16 +95,6 @@ export const portfolios = [
     image: MovieStore,
     link1: "https://github.com/NA-Asraful-Khan/Movie-Store",
     link2: "https://movie-store-of-naa.netlify.app/",
-    icon1: git,
-    icon2: eye,
-  },
-  {
-    id: uuid(),
-    category: "Front-End",
-    title: "QUIZ APP",
-    image: QUIZ,
-    link1: "https://github.com/NA-Asraful-Khan/QUIZ_APP",
-    link2: "https://quiz-app-teii.vercel.app/",
     icon1: git,
     icon2: eye,
   },

@@ -66,11 +66,7 @@ function About() {
         <div className="stats-container">
           <Stats icon={flame} number="10+" desc="All completed projects" />
           <Stats icon={mug} number="200+" desc="Cup of coffee" />
-          <Stats
-            icon={brief}
-            number="2+"
-            desc=" Years Self Learning Experience"
-          />
+          <Stats icon={brief} number="1+" desc=" Years Experience" />
         </div>
         <img alt="shape" src={shape1} className="shape1" />
         <img alt="shape" src={shape2} className="shape2" />
