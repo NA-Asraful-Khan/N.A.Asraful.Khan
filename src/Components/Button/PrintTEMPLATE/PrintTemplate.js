@@ -28,39 +28,42 @@ const resumeData = [
     title: "Projects",
     projects: [
       {
-        name: "Task Management System",
+        name: "University Management System",
         links: [
           {
             label: "Live Demo",
-            url: "https://project2.demo",
+            url: "https://uniapp.n-a-asraful-khan.xyz/",
           },
           {
-            label: "Source Code",
-            url: "https://github.com/johndoe/taskmanager",
+            label: "FrontEnd Code",
+            url: "https://github.com/NA-Asraful-Khan/University_Management_Frontend",
+          },
+          {
+            label: "Backend Code",
+            url: "https://github.com/NA-Asraful-Khan/University_Management_Backend",
           },
         ],
         description: [
-          "Developed a real-time task management system using MERN stack and Socket.io",
-          "Implemented drag-and-drop functionality and real-time updates",
+          "Developed a University management system using MERN stack, Redux and AntDesign",
+          "Implemented All Functionalty to manage User, Course and Academic Program",
           "Integrated JWT authentication and role-based access control",
         ],
       },
       {
-        name: "Task Management System",
+        name: "TODO Application",
         links: [
           {
             label: "Live Demo",
-            url: "https://project2.demo",
+            url: "https://todoapp.n-a-asraful-khan.xyz/",
           },
           {
             label: "Source Code",
-            url: "https://github.com/johndoe/taskmanager",
+            url: "https://github.com/NA-Asraful-Khan/Redux_With_Todos",
           },
         ],
         description: [
-          "Developed a real-time task management system using MERN stack and Socket.io",
-          "Implemented drag-and-drop functionality and real-time updates",
-          "Integrated JWT authentication and role-based access control",
+          "Developed a Todo Application using MERN stack and Redux",
+          "Implemented Update, Delete, Filter Functionality",
         ],
       },
     ],
