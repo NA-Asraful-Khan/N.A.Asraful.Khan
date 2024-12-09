@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { useTheme } from "../../context/themeContext";
-import Button from "../Button/Button";
-import { brief } from "../../utils/Icons";
 import avatar from "../../img/avatar.png";
 import line from "../../img/line.png";
 import Particle from "../Particle";
