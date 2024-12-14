@@ -8,6 +8,7 @@ import UniManagement from "../img/portImages/unimanagement.png";
 import Photographer from "../img/portImages/Photographer.png";
 import MovieStore from "../img/portImages/MovieStore.png";
 import QUIZ from "../img/portImages/QUIZ.png";
+import LVOCAB from "../img/portImages/LVOCAB.png";
 
 export const portfolios = [
   //Mern Start
@@ -19,6 +20,17 @@ export const portfolios = [
     link1: "https://github.com/NA-Asraful-Khan/University_Management_Frontend",
     link2: "https://uniapp.n-a-asraful-khan.xyz/",
     link3: "https://github.com/NA-Asraful-Khan/University_Management_Backend",
+    icon1: git,
+    icon2: eye,
+  },
+  {
+    id: uuid(),
+    category: "MERN",
+    title: "Learn Vocabulary",
+    image: LVOCAB,
+    link1: "https://github.com/NA-Asraful-Khan/LearnVocab",
+    link2: "https://learnvocab.n-a-asraful-khan.xyz/",
+    link3: "https://github.com/NA-Asraful-Khan/LearnVocabServer",
     icon1: git,
     icon2: eye,
   },
