@@ -107,10 +107,10 @@ const resumeData = [
     title: "Education",
     degrees: [
       {
-        degree: "Bachelor of Science in Computer Science",
-        university: "University of Technology",
-        graduationYear: "2023",
-        gpa: "GPA: 3.8/4.0",
+        degree: "BSc in Computer Science and Engineering",
+        university: "Bangladesh University",
+        graduationYear: "2025",
+        gpa: "GPA: 3.5/4.0",
       },
     ],
   },
