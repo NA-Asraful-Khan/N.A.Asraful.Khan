@@ -6,7 +6,7 @@ const resumeData = [
     type: "objective",
     title: "Professional Summary",
     content:
-      "Results-driven MERN Stack Developer with 6 months of hands-on experience building scalable web applications. Passionate about creating efficient, user-friendly solutions using modern technologies and best practices.",
+      "Results-driven MERN Stack Developer with 1 year of hands-on experience building scalable web applications. Passionate about creating efficient, user-friendly solutions using modern technologies and best practices.",
   },
   {
     type: "experience",
