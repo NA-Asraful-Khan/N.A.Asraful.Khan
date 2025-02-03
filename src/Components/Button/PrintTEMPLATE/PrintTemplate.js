@@ -13,12 +13,13 @@ const resumeData = [
     title: "Professional Experience",
     jobs: [
       {
-        title: "Junior Node Js Developer - STITBD.",
-        duration: "May 2024 - Present (8 months)",
+        title: "Jr. Node Js Developer - STITBD.",
+        duration: "May 2024 - Present (1 Year)",
         responsibilities: [
-          "Developed and maintained full-stack web applications using Next.js, React.js, and Node.js",
-          "Build OTT Platform and POS service Web Applications",
-          "Participated in daily stand-ups and sprint planning meetings in an Agile environment",
+          "Designed and developed an enterprise-level multi-vendor e-commerce and OTT solution.",
+          "Conducted software requirement analysis and designed according to requirements.",
+          "Developed Application using Nextjs with Server Side Rendering(SSR).",
+          "Technologies used: Node.js, Express.js, MySQL, React, Next.js, Redux, and Tailwind CSS.",
         ],
       },
     ],
@@ -31,7 +32,7 @@ const resumeData = [
         name: "University Management System",
         links: [
           {
-            label: "Live Demo",
+            label: "uniapp.n-a-asraful-khan.xyz",
             url: "https://uniapp.n-a-asraful-khan.xyz/",
           },
           {
@@ -50,20 +51,16 @@ const resumeData = [
         ],
       },
       {
-        name: "TODO Application",
+        name: "Dhuum (OTT platform)",
         links: [
           {
-            label: "Live Demo",
-            url: "https://todoapp.n-a-asraful-khan.xyz/",
-          },
-          {
-            label: "Source Code",
-            url: "https://github.com/NA-Asraful-Khan/Redux_With_Todos",
+            label: "dhuum.vercel.app",
+            url: "https://dhuum.vercel.app/",
           },
         ],
         description: [
-          "Developed a Todo Application using MERN stack and Redux",
-          "Implemented Update, Delete, Filter Functionality",
+          "It is a video streaming web application where users can subscribe and enjoy video streaming.",
+          "User authentication and authorization, chunking video upload and HLS video process using Nextjs, React, RTK query, Tailwind CSS, MySQL, Prisma, Node.js & Express.js, etc.",
         ],
       },
     ],
